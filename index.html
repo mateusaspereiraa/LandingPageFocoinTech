@@ -43,6 +43,20 @@
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
 
+    .texto-responsivo {
+        max-width: 60ch; /* Limita a ~60 caracteres por linha (ideal para leitura) */
+        width: 100%;
+        margin: 0 auto;
+        line-height: 1.6; /* Espaçamento entre linhas confortável */
+        word-break: break-word; /* Evita que palavras gigantes quebrem o layout */
+    }
+
+    .caixa-de-texto {
+        max-width: 400px; /* Impede que o texto se estenda na tela */
+        width: 100%;
+        word-wrap: break-word; /* Força a quebra se houver palavras longas */
+        white-space: normal; /* Garante que o texto dobre de linha */
+    }
   :root{
     --bg: #0E1220;
     --bg-alt: #12172A;
@@ -655,7 +669,8 @@
           <link rel="icon" type="image/jpeg" href="https://mateusaspereiraa.github.io/FotosLandingPage/techinfoco.jpeg"/>
           <img src="https://mateusaspereiraa.github.io/FotosLandingPage/techinfoco.jpeg" alt="Tech in Foco" class="logo-rodapé">
         </div>
-        <p style="color:var(--text-muted); font-size:0.9rem; max-width:32ch;">Tecnologia e inovação, com todos os canais de venda reunidos em um só lugar.</p>
+        <p style="color:var(--text-muted); font-size:0.9rem; max-width:32ch;">Tecnologia e inovação, com todos os canais<br> 
+          de venda reunidos em um só lugar.</p>
       </div>
 
       <div>
