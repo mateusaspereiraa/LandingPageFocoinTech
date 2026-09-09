@@ -6,11 +6,28 @@
 
 
 <title>Tech in Foco</title>
+
 <link rel="icon" type="image/jpeg" href="https://mateusaspereiraa.github.io/FotosLandingPage/techinfoco.jpeg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
     .logo-cabecalho {
+        /* 1. Definem o tamanho (largura e altura iguais deixam a imagem quadrada para formar um círculo perfeito) */
+        width: 100px;
+        height: 100px;
+        
+        /* 2. Garante que a imagem não fique "espremida" ou deformada */
+        object-fit: cover; 
+        
+        /* 3. Arredonda a imagem em 50%, transformando-a em um círculo */
+        border-radius: 50%;
+        
+        /* (Opcional) Adiciona uma bordinha ou sombra para destacar */
+        border: 2px solid #ffffff; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo-rodapé {
         /* 1. Definem o tamanho (largura e altura iguais deixam a imagem quadrada para formar um círculo perfeito) */
         width: 100px;
         height: 100px;
@@ -132,7 +149,7 @@
     padding:9px 18px;
     border-radius:100px;
   }
-  .header-cta:hover{ background:#ff8265; }
+  .header-cta:hover{ background:#4affa4; }
 
   @media (max-width:760px){
     nav.top-links{ display:none; }
@@ -184,7 +201,7 @@
     border-radius:100px;
     font-size:0.98rem;
   }
-  .btn-primary:hover{ background:#ff8265; }
+  .btn-primary:hover{ background:#4affa4; }
   .btn-secondary{
     display:inline-flex;
     align-items:center;
@@ -542,11 +559,11 @@
     </div>
 
     <div class="channel-grid">
-      <a class="channel-card" href="https://instagram.com/focointech" target="_blank" rel="noopener">
+      <a class="channel-card" href="https://www.instagram.com/focointech?stkn=MW51NnphZDBhcndmdA==" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1"/></svg>
         <h3>Instagram</h3>
         <p>Vitrine visual da marca e canal direto de mensagens.</p>
-        <span class="mono">@focointech</span>
+        <span class="mono">@techinfoco</span>
       </a>
 
       <a class="channel-card" href="https://linkedin.com/in/mateusapspereira" target="_blank" rel="noopener">
@@ -624,7 +641,7 @@
       <div>
         <h3>Escaneie e chegue aqui mesmo</h3>
         <p>Esse QR aponta para o link desta landing page. Assim que você tiver o domínio final, é só atualizar o link abaixo e o código se ajusta sozinho.</p>
-        <div class="qr-note">Link atual: https://techinfoco.com.br</div>
+        <div class="qr-note">Link atual: https://mateusaspereiraa.github.io/LandingPageFocoinTech/</div>
       </div>
     </div>
   </div>
@@ -635,8 +652,8 @@
     <div class="footer-grid">
       <div>
         <div class="brand" style="margin-bottom:10px;">
-          <svg viewBox="0 0 40 40" width="24" height="24" fill="none"><circle cx="20" cy="20" r="18" stroke="#4CE0D2" stroke-width="2"/><circle cx="20" cy="20" r="6" fill="#4CE0D2"/></svg>
-          Tech in Foco
+          <link rel="icon" type="image/jpeg" href="https://mateusaspereiraa.github.io/FotosLandingPage/techinfoco.jpeg"/>
+          <img src="https://mateusaspereiraa.github.io/FotosLandingPage/techinfoco.jpeg" alt="Tech in Foco" class="logo-rodapé">
         </div>
         <p style="color:var(--text-muted); font-size:0.9rem; max-width:32ch;">Tecnologia e inovação, com todos os canais de venda reunidos em um só lugar.</p>
       </div>
@@ -672,7 +689,6 @@
 
     <div class="footer-bottom">
       <span>© 2026 Tech in Foco</span>
-      <span>Página feita pra reunir todos os seus canais em um só link</span>
     </div>
   </div>
 </footer>
@@ -680,7 +696,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
   new QRCode(document.getElementById("qrcode"), {
-    text: "https://techinfoco.com.br",
+    text: "https://mateusaspereiraa.github.io/LandingPageFocoinTech/",
     width: 144,
     height: 144,
     colorDark: "#0E1220",
